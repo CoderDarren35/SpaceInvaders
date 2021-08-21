@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="gamewin" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 455.766
+margin_top = 302.723
+margin_right = 504.766
+margin_bottom = 333.723
+text = "You win
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
