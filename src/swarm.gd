@@ -1,6 +1,6 @@
 extends Node2D
 signal lose
-signal win
+signal win(swarm)
 export var speed: = 100.0
 export var downtime: = 1.0
 var down_remaining: = 0.0 
@@ -22,7 +22,8 @@ func _process(delta):
 	if not $LeftNotifier.is_on_screen() and not $RightNotifier.is_on_screen():
 		emit_signal("lose")
 	if get_child_count() <= 2:
-		emit_signal("win")
+		emit_signal("win", self)
+		queue_free()
 
 func reverse():
 	vector.y = speed
