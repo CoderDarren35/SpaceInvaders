@@ -20,3 +20,4 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 func _on_laser_body_entered(body):
 	body.queue_free()
+	queue_free()

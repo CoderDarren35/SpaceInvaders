@@ -14,5 +14,8 @@ script = ExtResource( 2 )
 
 [node name="background" parent="." instance=ExtResource( 4 )]
 
+[node name="BossTimer" type="Timer" parent="."]
+
 [connection signal="lose" from="swarm" to="." method="_on_swarm_lose"]
 [connection signal="win" from="swarm" to="." method="_on_swarm_win"]
+[connection signal="timeout" from="BossTimer" to="." method="_on_BossTimer_timeout"]
