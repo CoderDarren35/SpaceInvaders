@@ -30,6 +30,9 @@ func reverse():
 	vector.x = 0.0
 	down_remaining = downtime
 	direction *= -1.0
+
+func hit():
+	pass
 	
 
 func _on_RightNotifier_screen_exited():

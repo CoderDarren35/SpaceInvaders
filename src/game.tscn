@@ -7,6 +7,8 @@
 
 [node name="game" type="Node2D"]
 script = ExtResource( 2 )
+min_boss_delay = 1.0
+max_boss_delay = 2.0
 
 [node name="ship" parent="." instance=ExtResource( 1 )]
 
